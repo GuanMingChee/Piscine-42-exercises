@@ -1,11 +1,12 @@
-#include <unistd.h>
+//#include <unistd.h>
 
-char *ft_strncpy(char *dest, char *src, unsigned int n);
-int char_to_int(char *c);
+char	*ft_strncpy(char *dest, char *src, unsigned int n);
+/*int char_to_int(char *c);
 
 int main(int argc, char *argv[]){
 if(argc<3){
-write(2,"Please assign source to copy and size of destination after calling executable!\n",79);
+write(2,"Please assign source to copy and 
+size of destination after calling executable!\n",79);
 return 1;
 }
 int size=char_to_int(argv[2]);
@@ -40,12 +41,14 @@ multy*=10;
 }
 return summy;
 }
-
-char *ft_strncpy(char *dest, char *src, unsigned int n){
-	unsigned int i;
 //if src=hello, n=5; dest=hello
 //if src=hello, n=3; dest=hel
-//if src=hello, n=8; dest=hello\0\0\0
+//if src=hello, n=8; dest=hello\0\0\0*/
+
+char	*ft_strncpy(char *dest, char *src, unsigned int n)
+{
+	unsigned int	i;
+
 	i = 0;
 	while (src[i] != '\0' && i < n)
 	{
@@ -57,7 +60,5 @@ char *ft_strncpy(char *dest, char *src, unsigned int n){
 		dest[i] = '\0';
 		i++;
 	}
-	write(1,dest,n);
-	write(1,"\n",1);
-	return dest;
+	return (dest);
 }
